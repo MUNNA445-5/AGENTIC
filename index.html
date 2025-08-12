@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futuristic Tech Landing Page</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" defer></script>
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER / HERO SECTION -->
+    <header class="hero" id="hero">
+      <div class="nav">
+        <h1 class="logo">FuturaTech</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero-content">
+        <h2 class="headline"><span class="headline-text">Innovate the Future with Us</span></h2>
+        <p class="subtext">Cutting-edge technology solutions engineered to elevate your business.</p>
+        <a href="#" class="cta-btn">Get Started</a>
+      </div>
+    </header>
+
+    <!-- FEATURES SECTION -->
+    <section class="features section" id="features">
+      <div class="container">
+        <h3 class="section-title">Features</h3>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-brain"></i></div>
+            <h4>AI-Powered</h4>
+            <p>Advanced algorithms that learn and adapt to your needs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
+            <h4>Lightning Fast</h4>
+            <p>Optimized performance delivering unparalleled speed.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-shield-halved"></i></div>
+            <h4>Secure</h4>
+            <p>Enterprise-grade security protecting your data 24/7.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <h3 class="section-title">What Our Clients Say</h3>
+        <div class="slider-wrapper">
+          <div class="testimonial-slide active">
+            <p class="quote">“FuturaTech transformed our digital infrastructure beyond expectations.”</p>
+            <div class="author">— Alex Johnson, CTO of NovaCorp</div>
+          </div>
+          <div class="testimonial-slide">
+            <p class="quote">“Their innovative solutions propelled our growth by 300% in six months.”</p>
+            <div class="author">— Maria Gomez, CEO of Xelto</div>
+          </div>
+          <div class="testimonial-slide">
+            <p class="quote">“Unmatched professionalism and cutting-edge tech. Highly recommend!”</p>
+            <div class="author">— Liam Wong, Founder of QuantumX</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer" id="contact">
+      <div class="container footer-inner">
+        <p class="footer-logo">FuturaTech</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="copyright">© <span id="year"></span> FuturaTech. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
