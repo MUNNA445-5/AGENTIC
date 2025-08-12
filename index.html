@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0f19" />
+    <meta name="description" content="Futuristic tech landing page with premium motion design." />
+    <title>NeonEdge — Futuristic Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="global-bg" aria-hidden="true">
+      <div class="bg-gradient"></div>
+      <div class="bg-noise"></div>
+      <div class="bg-orb orb-1"></div>
+      <div class="bg-orb orb-2"></div>
+      <div class="bg-orb orb-3"></div>
+    </div>
+
+    <header class="nav glass">
+      <a class="brand" href="#" aria-label="NeonEdge Home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#7C3AED"/>
+              <stop offset="1" stop-color="#06B6D4"/>
+            </linearGradient>
+          </defs>
+          <path d="M12 2l7 4v8l-7 4-7-4V6l7-4z" stroke="url(#g1)" stroke-width="2" fill="rgba(255,255,255,0.06)" />
+          <circle cx="12" cy="12" r="2.5" fill="url(#g1)" />
+        </svg>
+        <span>NeonEdge</span>
+      </a>
+      <nav>
+        <a href="#features" class="nav-link micro">Features</a>
+        <a href="#testimonials" class="nav-link micro">Stories</a>
+        <a href="#contact" class="nav-link micro">Contact</a>
+        <a href="#cta" class="btn primary micro">Get Started</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="eyebrow glass micro">FUTURE-READY PLATFORM</div>
+            <h1 class="headline" aria-live="polite">
+              <span id="typewriter" class="typewriter" data-texts='["Build. Scale. Dominate.", "Design at the speed of thought.", "Engineering, elevated."]'>Build. Scale. Dominate.</span>
+            </h1>
+            <p class="subhead">
+              Enterprise-grade tooling with cinematic motion, designed for teams who demand performance and polish.
+            </p>
+            <div class="hero-ctas">
+              <a href="#cta" class="btn primary xl micro">Launch Demo</a>
+              <a href="#features" class="btn ghost xl micro">Explore Features</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat glass micro"><span class="kpi">99.99%</span><span class="label">Uptime</span></div>
+              <div class="stat glass micro"><span class="kpi">200ms</span><span class="label">Global Latency</span></div>
+              <div class="stat glass micro"><span class="kpi">+120K</span><span class="label">Active Users</span></div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="device glass reveal" data-anim="zoom-in">
+              <div class="device-screen">
+                <div class="grid"></div>
+                <div class="pulse"></div>
+              </div>
+              <div class="device-glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section reveal" id="features" data-anim="fade-up">
+        <div class="section-head">
+          <h2>Designed for impact</h2>
+          <p>Minimal surface. Maximal capability. Every detail crafted to perform.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature card glass micro reveal" data-anim="slide-in">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 7l9-4 9 4-9 4-9-4z"/>
+                <path d="M3 17l9 4 9-4"/>
+                <path d="M3 12l9 4 9-4"/>
+              </svg>
+            </div>
+            <h3>Modular Architecture</h3>
+            <p>Compose services like building blocks. Plug, play, and scale without friction.</p>
+            <a class="link micro" href="#">Learn more</a>
+          </article>
+
+          <article class="feature card glass micro reveal" data-anim="slide-in">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 3v9l6 6"/>
+              </svg>
+            </div>
+            <h3>Realtime Telemetry</h3>
+            <p>Observe everything. Decisions backed by live insights and predictive signals.</p>
+            <a class="link micro" href="#">Explore analytics</a>
+          </article>
+
+          <article class="feature card glass micro reveal" data-anim="slide-in">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16v16H4z"/>
+                <path d="M9 9h6v6H9z"/>
+              </svg>
+            </div>
+            <h3>Adaptive UI</h3>
+            <p>Responsive, accessible, and effortless. Motion that respects your flow.</p>
+            <a class="link micro" href="#">See components</a>
+          </article>
+
+          <article class="feature card glass micro reveal" data-anim="slide-in">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/>
+              </svg>
+            </div>
+            <h3>Security First</h3>
+            <p>Zero-trust by default, with hardware-backed keys and continuous attestation.</p>
+            <a class="link micro" href="#">Review whitepaper</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials section reveal" id="testimonials" data-anim="fade-up">
+        <div class="section-head">
+          <h2>Loved by teams worldwide</h2>
+          <p>What leaders say after switching to NeonEdge.</p>
+        </div>
+
+        <div class="slider glass">
+          <div class="slides" aria-live="polite">
+            <figure class="slide">
+              <blockquote>“The closest thing to magic we have in our stack. It just flies.”</blockquote>
+              <figcaption>
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&auto=format&fit=crop" alt="Portrait of Ava Singh" />
+                <div>
+                  <strong>Ava Singh</strong>
+                  <span>CTO, Nova Systems</span>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>“UI quality that rivals the best, with performance to match.”</blockquote>
+              <figcaption>
+                <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?q=80&w=256&auto=format&fit=crop" alt="Portrait of Leo Martins" />
+                <div>
+                  <strong>Leo Martins</strong>
+                  <span>Head of Product, Quantix</span>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>“From prototype to production without compromise. A designer’s dream.”</blockquote>
+              <figcaption>
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=256&auto=format&fit=crop" alt="Portrait of Maya Chen" />
+                <div>
+                  <strong>Maya Chen</strong>
+                  <span>Design Lead, Orbit Labs</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn prev micro" aria-label="Previous testimonial">←</button>
+            <div class="dots" role="tablist" aria-label="Testimonial navigation"></div>
+            <button class="slider-btn next micro" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section reveal" id="cta" data-anim="zoom-in">
+        <div class="cta-inner glass">
+          <h2>Make your next move</h2>
+          <p>Start free. Bring your team. Ship the future.</p>
+          <div class="hero-ctas">
+            <a href="#" class="btn primary xl micro">Start Free Trial</a>
+            <a href="#" class="btn ghost xl micro">Talk to Sales</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer glass" id="contact">
+      <div class="footer-inner">
+        <div class="brand-col">
+          <a class="brand" href="#" aria-label="NeonEdge Home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="g2" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#7C3AED"/>
+                  <stop offset="1" stop-color="#06B6D4"/>
+                </linearGradient>
+              </defs>
+              <path d="M12 2l7 4v8l-7 4-7-4V6l7-4z" stroke="url(#g2)" stroke-width="2" fill="rgba(255,255,255,0.06)" />
+              <circle cx="12" cy="12" r="2.5" fill="url(#g2)" />
+            </svg>
+            <span>NeonEdge</span>
+          </a>
+          <p>Precision engineering with cinematic motion.</p>
+        </div>
+        <div class="links-col">
+          <a href="#features" class="micro">Features</a>
+          <a href="#testimonials" class="micro">Stories</a>
+          <a href="#cta" class="micro">Pricing</a>
+          <a href="#contact" class="micro">Contact</a>
+        </div>
+        <div class="social-col">
+          <a class="social micro" href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M22 5.8c-.7.3-1.5.5-2.3.6.8-.5 1.4-1.2 1.7-2.1-.8.5-1.7.8-2.6 1-1.6-1.6-4.3-1.1-5.2 1.1-.3.8-.2 1.7.2 2.4-3.3-.2-6.3-1.7-8.3-4.3-1.1 2 .1 4.6 2.2 5.7-.6 0-1.2-.2-1.7-.5 0 2.2 1.5 4 3.6 4.5-.6.2-1.3.2-1.9.1.6 1.9 2.4 3.1 4.4 3.1-1.7 1.4-3.8 2.2-5.9 2.2H2c2.1 1.3 4.6 2 7.1 2 8.5 0 13.3-7.1 13-13.5.9-.6 1.6-1.3 2.1-2.2z"/>
+            </svg>
+          </a>
+          <a class="social micro" href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a class="social micro" href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 2C6.5 2 2 6.6 2 12.3c0 4.5 2.9 8.4 6.9 9.7.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.3 1 1.3 1 .8 1.4 2.2 1 2.8.8.1-.6.3-1 .6-1.3-2.2-.3-4.5-1.2-4.5-5.5 0-1.2.4-2.1 1-2.9-.1-.2-.4-1.3.1-2.7 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.5-.3s1.7.1 2.5.3c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.7.7.8 1.1 1.8 1.1 2.9 0 4.3-2.3 5.2-4.5 5.5.3.3.6.8.6 1.6v2.4c0 .3.2.6.7.5 4-1.3 6.9-5.2 6.9-9.7C22 6.6 17.5 2 12 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footnote">© <span id="year"></span> NeonEdge Inc. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
